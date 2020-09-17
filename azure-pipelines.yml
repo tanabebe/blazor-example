@@ -37,3 +37,8 @@ steps:
   inputs:
     command: 'build'
     projects: '**/blazor-example.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
